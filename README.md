@@ -54,7 +54,7 @@ git clone git@github.com:Asgardinho/ecs-fargate-example.git
 cd ecs-fargate-example/environments/staging
 sed -i "s/^account_id\s*:.*/account_id: \"$AWS_ACCOUNT_ID\"/" env.yaml
 ```
-pd: You can also modify other values like the container image, the versions to use, the weight of the load balancer
+pd: You can also modify other values like the container image, the versions to use, the weight of the load balancer, and the cpu and memory utilization.
 
 now run the terraform
 ```
