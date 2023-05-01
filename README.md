@@ -19,13 +19,21 @@ Folder structure showing qa and staging environment and vpc module as example
 ```
 # Architecture
 Frontend with ALB 
+
    • 2 TargetGroups with an http listener:80
+   
    • 1 ALB in RoundRobin you configure the weight for each targetgroup
+   
 ECS backend
+
    • 2 services
+   
    • 1-10 number of containers for each version with autoscaling
+   
 S3
+
    • for the terraform state file
+   
 
 # How to deploy it 
 
