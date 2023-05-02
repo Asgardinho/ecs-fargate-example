@@ -62,4 +62,4 @@ terragrunt run-all init -upgrade
 terragrunt run-all apply
 ```
 It should take around 5 minutes
-One of the outputs should be "lb_dns_name" that's the url to put on your browser and start testing
+One of the outputs should be "lb_dns_name" that's the url to put on your browser and start testing, the health endpoint is "lb_dns_name"/health
